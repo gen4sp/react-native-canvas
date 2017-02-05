@@ -9,7 +9,7 @@
   "main": "Canvas.js",
   "author": "Lochlan Wansbrough <lochie@live.com> (http://lwansbrough.com)",
   "dependencies": {
-    "react-native": "git://github.com/lwansbrough/react-native.git#webview-improvements"
+    "react-native": "git://github.com/lwansbrough/react-native.git"
   },
   "keywords": [
     "react-native",
