@@ -26,11 +26,9 @@ var Canvas = React.createClass({
           style={{
       margin:0,
       padding:0,
-      position:absolute,
-      transform:translateZ(0)
+      position:"absolute",
+      transform:"translateZ(0)"
           }}
-          underlayColor={'transparent'}
-          style={this.props.style}
         />
       </View>
     );
