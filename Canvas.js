@@ -20,8 +20,15 @@ var Canvas = React.createClass({
         <WebView
           automaticallyAdjustContentInsets={false}
           contentInset={{top: 0, right: 0, bottom: 0, left: 0}}
-          source={{html:"<style>*{margin:0;padding:0;}canvas{position:absolute;transform:translateZ(0);}</style><canvas></canvas><script>console.log('renderFunc:'+renderString);var canvas = document.querySelector('canvas');(" + renderString + ").call(" + contextString + ", canvas);</script>"}}
+          injectedJavaScript = {'console.log('renderFunc:'+renderString);var canvas = document.querySelector('canvas');(" + renderString + ").call(" + contextString + ", canvas);'}
+          source={{html:"<canvas></canvas>"}}
           opaque={false}
+          style={{
+      margin:0,
+      padding:0,
+      position:absolute,
+      transform:translateZ(0)
+          }}
           underlayColor={'transparent'}
           style={this.props.style}
         />
