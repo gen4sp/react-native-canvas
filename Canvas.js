@@ -20,7 +20,7 @@ var Canvas = React.createClass({
         <WebView
           automaticallyAdjustContentInsets={false}
           contentInset={{top: 0, right: 0, bottom: 0, left: 0}}
-          injectedJavaScript = {'console.log('renderFunc:'+renderString);var canvas = document.querySelector('canvas');(" + renderString + ").call(" + contextString + ", canvas);'}
+          injectedJavaScript = {"console.log('renderFunc:"+renderString+");var canvas = document.querySelector('canvas');(" + renderString + ").call(" + contextString + ", canvas);"}
           source={{html:"<canvas></canvas>"}}
           opaque={false}
           style={{
