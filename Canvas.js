@@ -1,10 +1,7 @@
 'use strict';
+import React, { Component } from 'react';
+import { View, WebView } from 'react-native';
 
-var React = require('react-native');
-var {
-  View,
-  WebView
-} = React;
 
 var Canvas = React.createClass({
 
